@@ -150,7 +150,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="header__btn header__btn-login" href="#">Login</a>
+                                <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                                    href="javascript:;">Login</a>
                                 <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
                                 <a class="header__btn header__btn-register" href="#">Register</a>
                             </div>
@@ -168,14 +169,14 @@
                             </div>
                             <ul class="menu__list">
                                 <li><a href="#">Home</a>
-                                <li><a href="#">About</a>
+                                <li><a href="about.html">About</a>
                                 <li><a href="#">WordPress</a>
                                 <li><a href="#">Joomla</a>
                                 <li><a href="#">PSD</a>
                                 <li><a href="#">Plugins</a>
                                 <li><a href="#">Components</a>
                                 <li><a href="#">Pages</a>
-                                <li><a href="#">Contact</a>
+                                <li><a href="contacts.html">Contact</a>
                                 <li><a href="#">Help</a>
                             </ul>
                         </nav>
@@ -1069,6 +1070,25 @@
         </footer>
     </div>
 
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Login
+            </div>
+            <form>
+                <label class="login__label-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login__label-pass">
+                    <input type="password" placeholder="Password" required>
+                </label>
+                <button type="submit">Submit</button>
+                <a class="create-acc" href="#">Create An Account?</a>
+                <a class="lost-pass" href="#">Lost Password?</a>
+            </form>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
